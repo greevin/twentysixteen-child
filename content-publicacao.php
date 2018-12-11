@@ -36,7 +36,22 @@
         <tr>
           <?php if( get_field('download') ): ?>
             <th scope="row">Download</th>
-            <td><a href="<?php the_field('download'); ?>"> <?php the_field('tipo'); ?></a></td>
+            <td>
+              <?php $downloads = get_post_meta( get_the_ID(), 'download' );
+              $tipos = get_post_meta( get_the_ID(), 'tipo' );
+
+              foreach ($downloads as $index => $download) {
+                echo '<a href="' . $download . '">' . $tipos[$index] .'</a></br>';
+              }
+              ?>
+            </td>
+          <?php endif; ?>
+        </tr>
+        <!-- Número de Páginas -->
+        <tr>
+          <?php if( get_field('numero_de_paginas') ): ?>
+            <th scope="row">Número de Páginas</th>
+            <td><?php the_field('numero_de_paginas'); ?> páginas</td>
           <?php endif; ?>
         </tr>
       </tbody>
