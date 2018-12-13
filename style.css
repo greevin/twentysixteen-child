@@ -90,6 +90,52 @@ header#masthead {
   color: white;
 }
 
+.equipe .circle-image {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 2%;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 0px 0px 3px rgba(200,207,213,0.9);
+}
+
+.equipe .card-image img {
+  object-fit: cover;
+  border-radius: 2%;
+  width: 150px;
+  height: 150px;
+}
+
+.equipe .card-cargo p.card-text {
+  margin-bottom: 1px;
+}
+
+.equipe .fundo-azul {
+  background: #2c3e50;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3498db, #2c3e50);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3498db, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 4em;
+  font-weight: 600;
+}
+
+.equipe .fundo-azul a {
+  color: white;
+}
+
+.equipe .fundo-azul a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.equipe .fundo-azul span {
+  display: table-cell;
+  vertical-align: middle;
+  height: 140px;
+  width: 150px;
+  text-transform: uppercase;
+}
+
 @media screen and (min-width: 44.375em) {
   .site {
       margin: 0;

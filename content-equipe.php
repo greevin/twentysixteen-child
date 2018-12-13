@@ -7,7 +7,7 @@
   <?php endif; ?>
   <?php the_content(); ?>
   <div class="equipe-info">
-    <table class="table">
+    <table class="table table-sm">
       <tbody>
         <!-- Cargo -->
         <tr>

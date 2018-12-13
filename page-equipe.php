@@ -7,8 +7,9 @@ get_header();
 <div class="equipe pagina-inicial" style="background: white;">
   <div class="container">
     <div class="equipe-atual section-title">
-      <h3 class="text-center">Atual</h3>
-      <div class="divider" style="width: 100px;"></div>
+      <header class="entry-header">
+		      <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	    </header><!-- .entry-header -->
       <div class="row">
         <?php
            $args = array('post_type' => 'equipe', 'post_status' => 'publish', 'posts_per_page' => -1, 'orderby'=> 'title', 'order' => 'ASC');
