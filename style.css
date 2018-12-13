@@ -10,7 +10,72 @@
  Text Domain:  twenty-sixteen-child
 */
 
-header #masthead .site-header {
-  padding-top: 20px;
-  padding-bottom: 20px;
+body {
+  font-family: Montserrat, "Helvetica Neue", sans-serif;
+  background-color: transparent;
+}
+
+
+header#masthead {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.introducao .jumbotron.jumbotron-fluid.text-center {
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+
+.introducao h2.display-4.jumbotron-title {
+  font-weight: 600;
+}
+
+.pagina-inicial a.btn.btn-secondary {
+  display: block;
+  margin: 10px 4px;
+  padding: .5em .6em;
+  white-space: normal;
+}
+
+.pagina-inicial a.first-btn {
+  background: #365363 !important;
+}
+
+.pagina-inicial a.first-btn:hover {
+  background: #253A45 !important;
+}
+
+.pagina-inicial a.second-btn {
+  background: #6b828d !important;
+}
+
+.pagina-inicial a.second-btn:hover {
+  background: #4a5b62 !important;
+}
+
+.pagina-inicial a.third-btn {
+  background: #728ea0 !important;
+}
+
+.pagina-inicial a.third-btn:hover {
+  background: #4f6370 !important;
+}
+
+.pagina-inicial h2 {
+  margin-bottom: 0px;
+  font-weight: 600;
+}
+
+.download div a:nth-child(2n) {
+  color: #1a1a1a;
+}
+
+.download .section-title h2 {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 44.375em) {
+  .site {
+      margin: 0;
+  }
 }

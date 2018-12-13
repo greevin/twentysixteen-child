@@ -15,9 +15,15 @@
         if ( $campos_jumbotron_loop->have_posts() ) :
           while ( $campos_jumbotron_loop->have_posts() ) : $campos_jumbotron_loop->the_post();
       ?>
-      <h2 class="display-4 jumbotron-title"><?php the_field('jumbotron_titulo'); ?></h2>
-      <p class="lead"><?php the_field('jumbotron_subtitulo'); ?></p>
-      <a href="<?php the_field('link_da_pagina') ?>" class="btn btn-dark my-2"><?php the_field('texto_do_botao') ?></a>
+      <?php if( get_field('jumbotron_titulo') ): ?>
+        <h2 class="display-4 jumbotron-title"><?php the_field('jumbotron_titulo'); ?></h2>
+      <?php endif; ?>
+      <?php if( get_field('jumbotron_subtitulo') ): ?>
+        <p class="lead"><?php the_field('jumbotron_subtitulo'); ?></p>
+      <?php endif; ?>
+      <?php if( get_field('link_da_pagina') ): ?>
+        <a href="<?php the_field('link_da_pagina') ?>" class="btn btn-dark my-2"><?php the_field('texto_do_botao') ?></a>
+      <?php endif; ?>
     </div>
     <?php
       endwhile;
