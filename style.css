@@ -21,11 +21,6 @@ header#masthead {
   padding-top: 0;
 }
 
-.introducao .jumbotron.jumbotron-fluid.text-center {
-  padding-bottom: 32px;
-  padding-top: 32px;
-}
-
 .introducao h2.display-4.jumbotron-title {
   font-weight: 600;
 }
@@ -72,6 +67,23 @@ header#masthead {
 
 .download .section-title h2 {
   margin-bottom: 20px;
+}
+
+.jumbotron {
+  background-image: url("http://teleducwp.test/wp-content/uploads/2018/12/Computer_Images_for_eLearning16.png");
+  background-size: cover;
+  background-position: center;
+  padding: 8rem 2rem;
+}
+
+.multi-line {
+  padding: 0.5rem 2rem;
+  color: #fff;
+  background: #1ad2c7;
+  -webkit-box-decoration-break: clone;
+  -o-box-decoration-break: clone;
+  box-decoration-break: clone;
+  line-height: 1.8;
 }
 
 @media screen and (min-width: 44.375em) {

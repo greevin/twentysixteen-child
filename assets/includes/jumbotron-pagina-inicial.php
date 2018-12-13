@@ -3,7 +3,7 @@
 ?>
 
 <section class="introducao">
-  <div class="jumbotron jumbotron-fluid text-center">
+  <div class="jumbotron jumbotron-fluid text-left">
     <div class="container">
       <?php
         $args = array(
@@ -16,10 +16,12 @@
           while ( $campos_jumbotron_loop->have_posts() ) : $campos_jumbotron_loop->the_post();
       ?>
       <?php if( get_field('jumbotron_titulo') ): ?>
-        <h2 class="display-4 jumbotron-title"><?php the_field('jumbotron_titulo'); ?></h2>
+          <h2 class="display-4 jumbotron-title">
+            <span class="multi-line"><?php the_field('jumbotron_titulo'); ?></span>
+          </h2>
       <?php endif; ?>
       <?php if( get_field('jumbotron_subtitulo') ): ?>
-        <p class="lead"><?php the_field('jumbotron_subtitulo'); ?></p>
+        <p class="lead"><span class="multi-line"><?php the_field('jumbotron_subtitulo'); ?></span></p>
       <?php endif; ?>
       <?php if( get_field('link_da_pagina') ): ?>
         <a href="<?php the_field('link_da_pagina') ?>" class="btn btn-dark my-2"><?php the_field('texto_do_botao') ?></a>
