@@ -70,10 +70,10 @@ header#masthead {
 }
 
 .jumbotron {
-  background-image: url("http://teleducwp.test/wp-content/uploads/2018/12/Computer_Images_for_eLearning16.png");
+  background-image: url("http://teleducwp.test/wp-content/uploads/2018/12/fundo_teleduc.png");
   background-size: cover;
   background-position: center;
-  padding: 8rem 2rem;
+  padding: 7.25rem 2rem;
 }
 
 .multi-line {
