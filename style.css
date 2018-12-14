@@ -136,6 +136,21 @@ header#masthead {
   text-transform: uppercase;
 }
 
+#colophon {
+  background: #2D6CB7;
+  color: white;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+#colophon a {
+  color: white;
+}
+
+footer p {
+  font-size: 85%;
+}
+
 @media screen and (min-width: 44.375em) {
   .site {
       margin: 0;
