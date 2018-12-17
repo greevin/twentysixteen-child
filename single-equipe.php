@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="container single-container">
+<div class="single-equipe container single-container">
   <div class="row">
   	<div class="col-xs-12 col-sm-12">
   		<?php

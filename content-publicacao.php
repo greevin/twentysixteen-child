@@ -5,7 +5,7 @@
   <?php if (has_post_thumbnail()): ?>
     <div class="pull-right"><?php the_post_thumbnail('medium'); ?></div>
   <?php endif; ?>
-  <div class="equipe-info" style="padding-top: 2rem;">
+  <div class="publicacao-info">
     <table class="table">
       <tbody>
         <!-- Referências -->
