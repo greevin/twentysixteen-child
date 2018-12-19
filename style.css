@@ -70,7 +70,7 @@ header#masthead {
 }
 
 .jumbotron {
-  background-image: url("http://teleducwp.test/wp-content/uploads/2018/12/fundo_teleduc.png");
+  background-image: url("assets/images/fundo_teleduc.png");
   background-size: cover;
   background-position: center;
   padding: 7.25rem 2rem;
@@ -171,6 +171,20 @@ footer p {
 
 .entry-title {
   margin-bottom: .5em;
+}
+
+.publicacao .card-header {
+  padding: 40px 20px 30px;
+  border-bottom: 1px solid #365363;
+  background: #365363;
+}
+
+.publicacao .card {
+  border: 2px solid #365363;
+}
+
+.publicacao .card-body {
+  background: url("assets/images/imgDetalhe.gif") left bottom no-repeat;
 }
 
 @media screen and (min-width: 56.875em) {

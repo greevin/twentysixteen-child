@@ -4,7 +4,7 @@
 <div class="col-md-12 col-lg-6" style="margin-bottom: 30px;">
   <div class="text-left">
     <div class="card">
-      <div style="padding: 20px 20px 10px;border-bottom: 1px solid rgba(0,0,0,.125);background: #365363;">
+      <div style="" class="card-header">
         <h5 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
       </div>
       <div class="card-body">
