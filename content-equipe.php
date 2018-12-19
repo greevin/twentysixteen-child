@@ -15,10 +15,16 @@
             <th scope="row">Função</th>
             <td>
               <?php
-                $funcoes = get_field('funcao');
-                if( $funcoes ): ?>
-                  <?php the_field('funcao'); ?><br>
-                <?php endif; ?>
+                $cargos = get_field('funcao');
+                $pkCount = (is_array($cargos) ? count($cargos) : 0);
+
+                if( $cargos && $pkCount > 1 ): ?>
+                  <?php foreach( $cargos as $cargo ): ?>
+                    <span class="card-text"><?php echo $cargo; ?></span><br>
+                  <?php endforeach; ?>
+                <?php else: ?>
+                  <span class="card-text"><?php echo $cargos; ?></span><br>
+              <?php endif; ?>
             </td>
           <?php endif; ?>
         </tr>

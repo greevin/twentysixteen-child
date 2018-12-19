@@ -31,13 +31,14 @@
       <div class="card-cargo">
         <?php
           $cargos = get_field('funcao');
+          $pkCount = (is_array($cargos) ? count($cargos) : 0);
 
-          if( $cargos && count($cargos) > 1 ): ?>
+          if( $cargos && $pkCount > 1 ): ?>
             <?php foreach( $cargos as $cargo ): ?>
-              <p class="card-text"><?php echo $cargo; ?></p>
+              <span class="card-text"><?php echo $cargo; ?></span><br>
             <?php endforeach; ?>
           <?php else: ?>
-            <p class="card-text"><?php echo $cargos; ?></p>
+            <span class="card-text"><?php echo $cargos; ?></span><br>
         <?php endif; ?>
       </div>
       <p class="card-text"><a href="<?php the_permalink(); ?>" class="btn btn-link">Leia Mais »</a></p>
