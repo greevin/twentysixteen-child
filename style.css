@@ -79,6 +79,14 @@ header#masthead {
   padding: 5rem 0;
 }
 
+#masthead {
+  position: fixed;
+  width: 100%;
+  background: white;
+  z-index: 1200;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
 .multi-line {
   padding: 0.5rem 2rem;
   color: #fff;
@@ -162,16 +170,22 @@ footer p {
 }
 
 .home .site-content {
-  padding: 0;
+  padding: 7.5% 0;
 }
 
 .site-content {
-  padding-top: 2%;
+  padding-top: 10%;
   padding-bottom: 2%;
 }
 
 .entry-title {
-  margin-bottom: .5em;
+  margin-bottom: 0;
+}
+
+.entry-header {
+/* background: blue; */
+/* padding: 3% 0; */
+  margin-bottom: 5%;
 }
 
 .publicacao .card-header {
