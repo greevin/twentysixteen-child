@@ -73,7 +73,10 @@ header#masthead {
   background-image: url("assets/images/fundo_teleduc.png");
   background-size: cover;
   background-position: center;
-  padding: 7.25rem 2rem;
+}
+
+.jumbotron .container {
+  padding: 5rem 0;
 }
 
 .multi-line {
@@ -159,9 +162,7 @@ footer p {
 }
 
 .home .site-content {
-  /* padding-top: 2%; */
-  /* padding-bottom: 2%; */
-  padding: 2% 0;
+  padding: 0;
 }
 
 .site-content {
