@@ -56,7 +56,7 @@ header#masthead {
   background: #4f6370 !important;
 }
 
-.pagina-inicial h2 {
+.pagina-inicial h2, .pagina-interna h2 {
   margin-bottom: 0px;
   font-weight: 600;
 }
@@ -69,14 +69,18 @@ header#masthead {
   margin-bottom: 20px;
 }
 
-.jumbotron {
+.home .jumbotron {
   background-image: url("assets/images/fundo_teleduc.png");
   background-size: cover;
   background-position: center;
 }
 
-.jumbotron .container {
+.home .jumbotron .container {
   padding: 5rem 0;
+}
+
+.pagina-interna .jumbotron {
+  padding: 2rem 1rem;
 }
 
 #masthead {
@@ -174,7 +178,7 @@ footer p {
 }
 
 .site-content {
-  padding-top: 10%;
+  padding-top: 99px;
   padding-bottom: 2%;
 }
 
@@ -206,6 +210,14 @@ footer p {
   .no-sidebar .entry-header, .no-sidebar .entry-content, .no-sidebar .entry-summary, .no-sidebar .entry-footer, .no-sidebar .comments-area, .no-sidebar .image-navigation, .no-sidebar .post-navigation, .no-sidebar .pagination, .no-sidebar .page-header, .no-sidebar .page-content, .no-sidebar .content-bottom-widgets {
       margin-right: 0;
       margin-left: 0;
+  }
+
+  .site-content {
+    padding: 99px 0 0;
+  }
+
+  .page-content, .entry-content {
+    padding: 0 4.5455%;
   }
 }
 
