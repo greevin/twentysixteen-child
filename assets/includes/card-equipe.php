@@ -1,7 +1,7 @@
 <?php
 // Card utilizado na página 'Equipe'
 ?>
-<div class="col-md-4 col-lg-4">
+<div class="col-md-3 col-lg-3">
   <div class="text-center">
     <div class="card-image">
       <?php $urlImg = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID())); ?>
@@ -41,7 +41,6 @@
             <span class="card-text"><?php echo $cargos; ?></span><br>
         <?php endif; ?>
       </div>
-      <p class="card-text"><a href="<?php the_permalink(); ?>" class="btn btn-link">Leia Mais »</a></p>
     </div>
   </div>
 </div>
