@@ -103,6 +103,15 @@ header#masthead {
 
 .publicacao .card-title > a {
   color: white;
+  font-size: 1rem;
+}
+
+.equipe .card-title {
+  font-size: 1.05rem;
+}
+
+.equipe .card-cargo {
+  font-size: 1rem;
 }
 
 .equipe .container, .publicacao .container {
@@ -197,17 +206,18 @@ footer p {
 }
 
 .publicacao .card-header {
-  padding: 40px 20px 30px;
-  border-bottom: 1px solid #365363;
-  background: #365363;
+  padding: 20px;
+  border-bottom: 1px solid #2d6cb7;
+  background: #2d6cb7;
 }
 
 .publicacao .card {
-  border: 2px solid #365363;
+  border: 2px solid #2d6cb7;
 }
 
 .publicacao .card-body {
   background: url("assets/images/imgDetalhe.gif") left bottom no-repeat;
+  font-size: .95rem;
 }
 
 @media screen and (min-width: 56.875em) {
