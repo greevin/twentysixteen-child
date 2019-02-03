@@ -220,6 +220,16 @@ footer p {
   font-size: .95rem;
 }
 
+.type-publicacao .entry-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.75rem;
+}
+
+article p:last-child, .type-publicacao table {
+  margin-bottom: 50px;
+}
+
 @media screen and (min-width: 56.875em) {
   .no-sidebar .entry-header, .no-sidebar .entry-content, .no-sidebar .entry-summary, .no-sidebar .entry-footer, .no-sidebar .comments-area, .no-sidebar .image-navigation, .no-sidebar .post-navigation, .no-sidebar .pagination, .no-sidebar .page-header, .no-sidebar .page-content, .no-sidebar .content-bottom-widgets {
       margin-right: 0;
