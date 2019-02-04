@@ -37,13 +37,10 @@
           <?php if( get_field('download') ): ?>
             <th scope="row">Download</th>
             <td>
-              <?php $downloads = get_post_meta( get_the_ID(), 'download' );
-              $tipos = get_post_meta( get_the_ID(), 'tipo' );
-
-              foreach ($downloads as $index => $download) {
-                echo '<a href="' . $download . '">' . $tipos[$index] .'</a></br>';
-              }
-              ?>
+              <a href="<?php the_field('download'); ?>"><?php the_field('tipo'); ?></a><br>
+              <?php if( get_field('download2') ): ?>
+                <a href="<?php the_field('download2'); ?>"><?php the_field('tipo2'); ?></a>
+              <?php endif; ?>
             </td>
           <?php endif; ?>
         </tr>
