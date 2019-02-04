@@ -220,7 +220,8 @@ footer p {
   font-size: .95rem;
 }
 
-.type-publicacao .entry-title {
+.type-publicacao .entry-title,
+.type-equipe .entry-title {
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 1.75rem;

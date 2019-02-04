@@ -2,9 +2,6 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <?php the_title('<h2 class="entry-title">', '</h2>'); ?>
-  <?php if (has_post_thumbnail()): ?>
-    <div class="pull-right"><?php the_post_thumbnail('medium'); ?></div>
-  <?php endif; ?>
   <?php the_content(); ?>
   <div class="equipe-info">
     <table class="table table-sm">
@@ -16,15 +13,10 @@
             <td>
               <?php
                 $cargos = get_field('funcao');
-                $pkCount = (is_array($cargos) ? count($cargos) : 0);
-
-                if( $cargos && $pkCount > 1 ): ?>
-                  <?php foreach( $cargos as $cargo ): ?>
-                    <span class="card-text"><?php echo $cargo; ?></span><br>
-                  <?php endforeach; ?>
-                <?php else: ?>
-                  <span class="card-text"><?php echo $cargos; ?></span><br>
-              <?php endif; ?>
+                if( $cargos ): ?>
+                  <?php the_field('funcao'); ?><br>
+                <?php endif; 
+              ?>
             </td>
           <?php endif; ?>
         </tr>
