@@ -221,10 +221,19 @@ footer p {
 }
 
 .type-publicacao .entry-title,
-.type-equipe .entry-title {
+.type-equipe .entry-title,
+.type-faq .entry-title {
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 1.75rem;
+}
+
+#post-797 table {
+  border: 0;
+}
+
+#post-797 .table td, .table th {
+  padding: .75rem 0;
 }
 
 article p:last-child, .type-publicacao table {
