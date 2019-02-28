@@ -18,7 +18,7 @@
           <?php endif; ?>
         </div>
         <div class="referencias">
-          <span><b>Referências</b></span><br>
+          <span><b>Referência</b></span><br>
           <span class="card-text"><?php the_field('referencias'); ?></span>
         </div>
         <div class="autor">

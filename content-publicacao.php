@@ -11,7 +11,7 @@
         <!-- Referências -->
         <tr>
           <?php if( get_field('referencias') ): ?>
-            <th scope="row">Referências</th>
+            <th scope="row">Referência</th>
             <td><?php the_field('referencias'); ?></td>
           <?php endif; ?>
         </tr>
