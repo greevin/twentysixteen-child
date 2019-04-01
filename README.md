@@ -1,2 +1,2 @@
-# twentysixteen-child
-Tema do TelEduc baseado no Twenty Sixteen do Wordpress
+# Tema TelEduc para Wordpress
+Tema criado para o site do TelEduc baseado no Twenty Sixteen do Wordpress.
